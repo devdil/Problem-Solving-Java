@@ -1,3 +1,5 @@
+package problems.generalproblems;
+
 public class MaximumScoreAfterSplittingAString1422 {
 
     public static class Solution {
@@ -17,6 +19,7 @@ public class MaximumScoreAfterSplittingAString1422 {
 
                 // fill in left sub arr
                 int zerosFound = 0;
+
                 for (int i=0; i<s.length(); i++){
                     zerosFound = s.charAt(i) == '0' ? zerosFound+1 : zerosFound;
                     leftArr[i] = zerosFound;
